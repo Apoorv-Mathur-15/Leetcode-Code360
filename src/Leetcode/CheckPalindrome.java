@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class CheckPalindrome {
     public static boolean checkPalindrome(int x) {

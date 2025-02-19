@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class CountIntegersWithEvenDigitSum {
     public static int countEven(int num) {

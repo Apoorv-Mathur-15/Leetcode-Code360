@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class MaxSubArray {
     public static int maxSubArray(int[] arr) {

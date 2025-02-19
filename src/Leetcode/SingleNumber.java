@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class SingleNumber {
     public static int singleNumber(int[] nums) {

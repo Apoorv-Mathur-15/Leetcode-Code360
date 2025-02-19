@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class CountPrimes {
     public static int countPrimes(int n) {

@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class CheckAllABeforeB {
     public static boolean checkString(String s) {

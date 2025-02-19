@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {

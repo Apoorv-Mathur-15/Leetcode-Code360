@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class MaxProfit2 {
     public static int maxProfit(int[] prices) {

@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class MoveZeroes {
     public static void moveZeroes(int arr[]) {

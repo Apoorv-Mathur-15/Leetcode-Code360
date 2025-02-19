@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class StringtoIntegerAtoi {
     public static int myAtoi(String s) {

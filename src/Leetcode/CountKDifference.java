@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class CountKDifference {
     public static int countKDifference(int nums[], int k) {

@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class UglyNumberII {
     public static int nthUglyNumber(int n) {

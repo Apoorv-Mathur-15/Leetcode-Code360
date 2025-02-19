@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class ContainerMostWater {
     public static int maxArea(int[] height) {

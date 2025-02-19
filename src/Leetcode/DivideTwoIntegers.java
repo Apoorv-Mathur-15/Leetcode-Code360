@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class DivideTwoIntegers {
     public static int divide(int dividend, int divisor) {

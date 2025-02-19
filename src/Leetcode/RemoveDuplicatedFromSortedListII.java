@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class RemoveDuplicatedFromSortedListII {
     public ListNode deleteDuplicates(ListNode head) {

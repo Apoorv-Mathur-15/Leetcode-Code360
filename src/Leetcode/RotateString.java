@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class RotateString {
     private static boolean check(String s, String goal, int i) {

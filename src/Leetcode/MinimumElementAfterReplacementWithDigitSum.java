@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class MinimumElementAfterReplacementWithDigitSum {
     public static int minElement(int[] nums) {

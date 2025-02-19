@@ -1,6 +1,4 @@
-package Leetcode;
-
-import java.util.Scanner;
+package src.Leetcode;
 
 public class RomanToInteger {
     public static int value(char c) {

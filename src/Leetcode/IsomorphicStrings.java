@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class IsomorphicStrings {
     public static boolean isIsomorphic(String s, String t) {

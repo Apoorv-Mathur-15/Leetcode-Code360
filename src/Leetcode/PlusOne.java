@@ -1,4 +1,4 @@
-package Leetcode;
+package src.Leetcode;
 
 public class PlusOne {
     public static int[] plusOne(int[] digits) {
