@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 public class CheckSortedArray {
     public static int isSorted(int n, int[] a) {

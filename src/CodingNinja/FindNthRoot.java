@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 public class FindNthRoot {
     //Return 1 if mid == m

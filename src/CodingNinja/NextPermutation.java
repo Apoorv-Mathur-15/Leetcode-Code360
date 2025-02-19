@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,7 +36,7 @@ public class NextPermutation {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 1, 5};
+        int[] arr = {1, 1, 5};
         nextPermutation(arr);
     }
 }

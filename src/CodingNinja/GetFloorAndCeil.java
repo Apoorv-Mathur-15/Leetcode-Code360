@@ -1,6 +1,4 @@
-package CodingNinja;
-
-import java.util.Arrays;
+package src.CodingNinja;
 
 public class GetFloorAndCeil {
 

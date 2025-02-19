@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 public class NumberOfOccurrences {
     public static int count(int[] arr, int n, int x) {

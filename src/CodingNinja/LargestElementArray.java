@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ public class LargestElementArray {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 16, 156, 1566, 189, 56, 16512};
+        int[] arr = {1, 16, 156, 1566, 189, 56, 16512};
         System.out.println(largestElement(arr, arr.length));
     }
 }

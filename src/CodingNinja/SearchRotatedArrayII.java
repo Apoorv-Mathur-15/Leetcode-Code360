@@ -1,6 +1,4 @@
-package CodingNinja;
-
-import java.util.ArrayList;
+package src.CodingNinja;
 
 public class SearchRotatedArrayII {
     public static boolean searchInARotatedSortedArrayII(int[] arr, int key) {

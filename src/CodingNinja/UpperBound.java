@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 public class UpperBound {
 

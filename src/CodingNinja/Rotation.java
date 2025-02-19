@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 public class Rotation {
     public static int findKRotation(int[] arr) {

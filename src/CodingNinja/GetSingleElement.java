@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GetSingleElement {
-    public static int getSingleElement(int arr[]) {
+    public static int getSingleElement(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
         int n = arr.length;
         for (int i = 0; i < n; i++) {
@@ -21,7 +21,7 @@ public class GetSingleElement {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 5, 3, 7, 5, 2, 4, 9, 9, 9, 9};
+        int[] arr = {1, 2, 5, 3, 7, 5, 2, 4, 9, 9, 9, 9};
         System.out.println(getSingleElement(arr));
     }
 }

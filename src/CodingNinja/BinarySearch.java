@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 public class BinarySearch {
     public static int binarySearch(int[] arr, int low, int high, int target) {
@@ -23,7 +23,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 3, 7, 9, 11, 12, 45};
+        int[] arr = {1, 3, 7, 9, 11, 12, 45};
         System.out.println(search(arr, 3));
     }
 }

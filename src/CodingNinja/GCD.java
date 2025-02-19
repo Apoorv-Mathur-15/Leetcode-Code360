@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 import java.util.HashSet;
 

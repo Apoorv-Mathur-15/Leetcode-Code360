@@ -1,4 +1,4 @@
-package CodingNinja;
+package src.CodingNinja;
 
 import java.util.HashMap;
 import java.util.Map;
