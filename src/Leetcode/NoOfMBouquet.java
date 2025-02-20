@@ -4,8 +4,8 @@ public class NoOfMBouquet {
     public static boolean possible(int[] arr, int day, int m, int k) {
         int n = arr.length;
         int count = 0, numberOfBouquets = 0;
-        for (int i = 0; i < n; i++) {
-            if (arr[i] <= day)
+        for (int i : arr) {
+            if (i <= day)
                 count++;
             else {
                 numberOfBouquets += count / k;
@@ -22,9 +22,9 @@ public class NoOfMBouquet {
         if (val > n)
             return -1;
         int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
-        for (int i = 0; i < n; i++) {
-            min = Math.min(min, arr[i]);
-            max = Math.max(max, arr[i]);
+        for (int i : arr) {
+            min = Math.min(min, i);
+            max = Math.max(max, i);
         }
         int low = min, high = max;
         while (low <= high) {
