@@ -2,7 +2,6 @@ package src.Leetcode;
 
 public class NoOfMBouquet {
     public static boolean possible(int[] arr, int day, int m, int k) {
-        int n = arr.length;
         int count = 0, numberOfBouquets = 0;
         for (int i : arr) {
             if (i <= day)
