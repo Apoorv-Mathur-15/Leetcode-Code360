@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class SubarrayXorK {
     public static int subarraysWithSumK(int []a, int b) {
-        int n = a.length;
         int xr = 0;
         Map<Integer, Integer> map = new HashMap<>();
         map.put(xr,1);
