@@ -26,8 +26,8 @@ public class PairSum {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{2, 7, 11, 15};
-        int[] nums1= new int[]{1,2,3,4,5};
+        //int[] nums = new int[]{2, 7, 11, 15};
+        //int[] nums1= new int[]{1,2,3,4,5};
         int[] nums2 = new int[]{2, -3, 3, 3, -2};
         //List<int[]> result = pairSum(nums, 9);
         //List<int[]> result1 = pairSum(nums1, 5);
