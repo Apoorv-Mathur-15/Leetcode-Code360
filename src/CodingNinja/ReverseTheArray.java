@@ -6,23 +6,27 @@ import java.util.Arrays;
 public class ReverseTheArray {
     public static void reverseArray(ArrayList<Integer> arr, int m)
     {
-        ArrayList<Integer> result = new ArrayList<>();
-        int j = 0;
-        for(int i = 0; i< arr.size(); i++) {
-            if(i < m){
-                result.add(arr.get(i));
-            }
-            else {
-                result.add(arr.get(arr.size() -j -1));
-                j++;
-            }
+        int left = m + 1;
+        int right = arr.size() - 1;
+
+        // Reverse the subarray between left and right
+        while (left < right) {
+            // Swap elements at left and right
+            int temp = arr.get(left);
+            arr.set(left, arr.get(right));
+            arr.set(right, temp);
+            left++;
+            right--;
         }
-        for(int i : result)
-            System.out.print(i+" ");
+
+        // Print the resulting array
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
     }
 
     public static void main(String[] args) {
-        ArrayList arr = (ArrayList) Arrays.asList(1,2,3,4,5);
-        reverseArray(arr, 2);
+        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
+        reverseArray(arr, 3);
     }
 }
