@@ -12,7 +12,7 @@ public class FindMajorityElement {
             else
                 hashMap.put(i, 1);
         }
-        int floor = (int) n/2;
+        int floor = n/2;
         for(Map.Entry<Integer, Integer> map : hashMap.entrySet()){
             if(map.getValue() > floor)
                 return map.getKey();
