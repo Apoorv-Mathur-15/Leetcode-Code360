@@ -2,7 +2,7 @@ package src.CodingNinja;
 
 public class ConcatLargestDigit {
     public static int concatLargestDigit(int a, int b, int c){
-        int result = 0;
+        int result;
         result = largestNumber(a)*100 + largestNumber(b)*10 + largestNumber(c);
         return  result;
     }
