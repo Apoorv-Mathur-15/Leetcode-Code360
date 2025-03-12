@@ -1,7 +1,7 @@
 package src.CodingNinja;
 
 public class CountInversions {
-    public static long getInversions(long arr[], int n){
+    public static long getInversions(long[] arr, int n){
         long inversions = 0;
         for(int i=0; i<n-1; i++){
             for(int j=i+1; j<n; j++){
