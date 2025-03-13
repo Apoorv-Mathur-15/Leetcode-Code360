@@ -2,7 +2,6 @@ package src.CodingNinja;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class LongestSubArrayWithZeroSum {
     public static int LongestSubsetWithZeroSum(ArrayList<Integer> arr){
