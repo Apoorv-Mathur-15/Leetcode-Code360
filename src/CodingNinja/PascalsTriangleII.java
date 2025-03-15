@@ -1,7 +1,6 @@
 package src.CodingNinja;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class PascalsTriangleII {
     public static int nCr(int n, int r) {
