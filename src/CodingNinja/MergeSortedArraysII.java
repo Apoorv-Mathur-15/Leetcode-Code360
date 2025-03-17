@@ -4,15 +4,15 @@ package src.CodingNinja;
 import java.util.Arrays;
 
 public class MergeSortedArraysII {
-    public static int[] ninjaAndSortedArrays(int arr1[], int arr2[], int m, int n){
+    public static int[] ninjaAndSortedArrays(int[] arr1, int[] arr2, int m, int n){
         Arrays.sort(arr1);
-        for (int i = 0; i < arr1.length / 2; i++) {
+        for (int i = 0; i < m / 2; i++) {
             int temp = arr1[i];
-            arr1[i] = arr1[arr1.length - 1 - i];
-            arr1[arr1.length - 1 - i] = temp;
+            arr1[i] = arr1[m - 1 - i];
+            arr1[m - 1 - i] = temp;
         }
         int j = 0;
-        for (int i = 0; i < arr1.length && j < arr2.length; i++) {
+        for (int i = 0; i < m && j < n; i++) {
             if (arr1[i] == 0) {
                 arr1[i] = arr2[j++];
             }
