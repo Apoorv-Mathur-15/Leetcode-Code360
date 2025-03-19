@@ -1,15 +1,16 @@
 package src.CodingNinja;
 
 public class ModularExponentiation {
-    public static int modularExponentiation(int x, int n, int m){
+    public static long modularExponentiation(long x, long n, long m){
         //System.out.println(Math.pow(x,n));
-        int result = 1;
-        x = x % m;
-        while (n > 0){
-            if(n % 2 == 1)
+        long result = 1;
+        x = x % m;  // Take x % m to handle large bases
+        while (n > 0) {
+            if (n % 2 == 1) {  // If n is odd
                 result = (result * x) % m;
-            x = (x * x) % m;
-            n =  n / 2;
+            }
+            x = (x * x) % m;  // Square the base, and take modulo
+            n = n / 2;  // Divide the exponent by 2
         }
         return result;
     }
