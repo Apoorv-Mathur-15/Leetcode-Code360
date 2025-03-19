@@ -9,7 +9,7 @@ public class AddTwoNumbers {
             this.data = data;
         }
     }
-    public static LinkedListNode addTwoNumbers(LinkedListNode head1, LinkedListNode head2){
+    static LinkedListNode addTwoNumbers(LinkedListNode head1, LinkedListNode head2){
         LinkedListNode dummy = new LinkedListNode(0);
         LinkedListNode current = dummy;
 
