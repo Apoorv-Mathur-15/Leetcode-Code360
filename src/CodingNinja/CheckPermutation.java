@@ -12,9 +12,7 @@ public class CheckPermutation {
             set1.add(c);
         for(char c : str2.toCharArray())
             set2.add(c);
-        if(set1.equals(set2))
-            return true;
-        return false;
+        return set1.equals(set2);
     }
 
     public static void main(String[] args) {
