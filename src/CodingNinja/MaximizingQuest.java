@@ -2,7 +2,7 @@ package src.CodingNinja;
 
 public class MaximizingQuest {
     public static int findMaximum(int a, int b, int c){
-        int temp = 0;
+        int temp;
         if(b > c)
             temp = b*5;
         else
