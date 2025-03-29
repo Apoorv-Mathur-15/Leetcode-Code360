@@ -1,3 +1,5 @@
+package src;
+
 public class Patterns {
     static void print1(int n) {
         System.out.println("Pattern 1");
