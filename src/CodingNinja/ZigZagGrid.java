@@ -1,13 +1,17 @@
 package src.CodingNinja;
 
 public class ZigZagGrid {
-
-    public static void main(String[] args) {
-        int[][] matrix = new int[][]{{1,2,3,4},{8,7,6,5},{9,10,11,12},{16,15,14,13}};
-        for(int[] mat : matrix){
-            for(int i : mat)
-                System.out.print(i+" ");
-            System.out.println();
+    public static long zigZagGrid(int n, int m, int r, int c){
+        int x = (r - 1) * m;
+        int ans = 0;
+        if (r % 2 == 1) {
+            ans = x;
+        } else {
+            ans = x + m  - c + 1;
         }
+        return ans;
+    }
+    public static void main(String[] args) {
+        System.out.println(zigZagGrid(3,4,2,6));
     }
 }
