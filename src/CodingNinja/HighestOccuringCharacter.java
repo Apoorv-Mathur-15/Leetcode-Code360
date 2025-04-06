@@ -6,12 +6,8 @@ import java.util.Map;
 public class HighestOccuringCharacter {
     public static char highestOccuringChar(String s){
         HashMap<Character,Integer> map = new HashMap<>();
-        for(char c : s.toCharArray()){
-            if(map.containsKey(c))
-                map.put(c, map.get(c) + 1);
-            else
-                map.put(c, 1);
-        }
+        for(char c : s.toCharArray())
+            map.put(c, map.getOrDefault(c, 0) + 1);
         Map.Entry<Character, Integer> maxValueEntry = null;
         for(Map.Entry<Character, Integer> currentMapEntry : map.entrySet()){
             if(maxValueEntry == null || currentMapEntry.getValue() > maxValueEntry.getValue())
