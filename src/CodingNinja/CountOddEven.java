@@ -6,10 +6,7 @@ public class CountOddEven {
     public static int[] countEvenOdd(int[] arr, int n){
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i : arr){
-            if(map.containsKey(i))
-                map.put(i, map.get(i)+1);
-            else
-                map.put(i, 1);
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
         int[] counts = new int[2];
         map.forEach((key, value) -> {
