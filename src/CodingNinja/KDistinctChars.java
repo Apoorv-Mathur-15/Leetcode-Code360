@@ -13,7 +13,7 @@ public class KDistinctChars {
         for(int right = 0; right < str.length(); right++){
             map.put(str.charAt(right), map.getOrDefault(str.charAt(right), 0) + 1);
             while (map.size() > k){
-                map.put(str.charAt(left), map.get(str.charAt(left) - 1));
+                map.put(str.charAt(left), map.getOrDefault(str.charAt(left), 0) - 1);
                 if(map.get(str.charAt(left)) == 0)
                     map.remove(str.charAt(left));
                 left++;
