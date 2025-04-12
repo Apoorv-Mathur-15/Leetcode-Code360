@@ -6,10 +6,9 @@ import java.util.Arrays;
 public class KthInteger {
     public static int kthInteger(int n, int k, int x, ArrayList<Integer> a){
         ArrayList<Integer> temp = new ArrayList<>();
-        for(int i=0; i<n; i++){
-            if(a.get(i) % x != 0){
-                temp.add(a.get(i));
-            }
+        for(int i : a){
+            if(i % x != 0)
+                temp.add(i);
         }
         if(temp.isEmpty() || temp.size() < k)
             return -1;
