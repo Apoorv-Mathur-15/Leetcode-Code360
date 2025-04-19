@@ -7,7 +7,7 @@ public class SumOrProduct {
         // Write your code here
         for(int i=1; i<=n; i++){
             if(q == 1)
-                result += (long) i;
+                result += i;
             else if(q == 2)
                 result = (result * i) % MOD;
         }
