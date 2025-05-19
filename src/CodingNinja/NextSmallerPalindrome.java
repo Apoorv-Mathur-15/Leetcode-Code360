@@ -54,9 +54,9 @@ public class NextSmallerPalindrome {
         StringBuilder stringBuilder = new StringBuilder(left);
         //System.out.println("Inside mirror for left: "+left+" and isOdd: "+isOdd);
         if(isOdd)
-            return left + stringBuilder.deleteCharAt(stringBuilder.length() - 1).reverse().toString();
+            return left + stringBuilder.deleteCharAt(stringBuilder.length() - 1).reverse();
         else
-            return left + stringBuilder.reverse().toString();
+            return left + stringBuilder.reverse();
 
     }
 
