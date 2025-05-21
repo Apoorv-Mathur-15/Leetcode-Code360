@@ -1,27 +1,35 @@
 package src.CodingNinja;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class PrintSubArrayMax {
     public static void printSubArrayMax(int[] arr, int n, int k){
         if (arr == null || n == 0 || k > n || k <= 0) {
-            //System.out.println("Invalid input");
             return;
         }
-        int[] max = new int[n-k+1];
-        int b = 0;
-        for(int i=0; i<n-k+1; i++){
-            int a = arr[i];
-            //System.out.println();
-            //System.out.println("i: "+i);
-            for(int j=i+1; j<i+k; j++){
-                a = Math.max(a, arr[j]);
-                //System.out.println("j: "+j);
-                //System.out.println("a: "+a);
+
+        Deque<Integer> deque = new LinkedList<>();
+
+        for (int i = 0; i < n; i++) {
+            // Remove indices out of current window
+            while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
+                deque.pollFirst();
             }
-            max[b] = a;
-            b++;
+
+            // Remove indices whose values are less than current element
+            while (!deque.isEmpty() && arr[deque.peekLast()] < arr[i]) {
+                deque.pollLast();
+            }
+
+            // Add current index
+            deque.offerLast(i);
+
+            // Print the max of the current window
+            if (i >= k - 1) {
+                System.out.print(arr[deque.peekFirst()] + " ");
+            }
         }
-        for(int i : max)
-            System.out.print(i+" ");
     }
 
     public static void main(String[] args) {
