@@ -10,7 +10,7 @@ public class ContainsDuplicateII {
         for (int i = 0; i < length; i++) {
             Integer index = map.put(nums[i], i);
             System.out.println("index: " + index);
-            if (index != null && Math.abs(index - 1) <= k) {
+            if (index != null && Math.abs(i - index) <= k) {
                 System.out.println("i " + i);
                 System.out.println("index inside " + index);
                 return true;
