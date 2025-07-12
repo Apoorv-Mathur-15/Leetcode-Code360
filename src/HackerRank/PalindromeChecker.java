@@ -1,4 +1,4 @@
-package src;
+package src.HackerRank;
 
 import java.util.Scanner;
 

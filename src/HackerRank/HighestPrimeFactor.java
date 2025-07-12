@@ -1,4 +1,4 @@
-package src;
+package src.HackerRank;
 
 public class HighestPrimeFactor {
     private static long PrimeOrHighestPrimeFactor(long n){

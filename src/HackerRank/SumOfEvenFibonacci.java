@@ -1,4 +1,4 @@
-package src;
+package src.HackerRank;
 
 public class SumOfEvenFibonacci {
     private static long sumFibonnaci(long n){
