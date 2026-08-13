@@ -1,4 +1,4 @@
-package src.Leetcode;
+package src.Leetcode.MathQuest;
 
 public class UglyNumber {
 
