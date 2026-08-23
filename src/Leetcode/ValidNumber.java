@@ -1,0 +1,9 @@
+package src.Leetcode;
+
+public class ValidNumber {
+    public static boolean isNumber(String s) {
+        String regex = "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][+-]?\\d+)?$";
+
+        return s.matches(regex);
+    }
+}
