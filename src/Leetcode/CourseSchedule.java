@@ -1,10 +1,13 @@
 package src.Leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CourseSchedule {
 
     public static boolean canFinish(int numCourses, int[][] prerequisites) {
         // graph[i] contains courses that depend on course i
-        java.util.List<Integer>[] graph = new java.util.ArrayList[numCourses];
+        List<Integer>[] graph = new ArrayList[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
             graph[i] = new java.util.ArrayList<>();
@@ -31,7 +34,7 @@ public class CourseSchedule {
 
     private static boolean hasCycle(
             int course,
-            java.util.List<Integer>[] graph,
+            List<Integer>[] graph,
             int[] state) {
 
         // We found a course currently in our DFS path
