@@ -1,16 +1,20 @@
 package src.Leetcode;
 
+import java.util.TreeSet;
+
 public class ContainsDuplicatesIII {
     public static boolean containsNearbyAlmostDuplicate(int[] nums, int indexDiff, int valueDiff) {
-        for (int i = 0; i < nums.length - 1; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (j - i > indexDiff) {
-                    break;
-                }
-                if (Math.abs((long) nums[i] - nums[j]) <= valueDiff) {
-                    return true;
-                }
-            }
+        if( indexDiff <= 0 || valueDiff < 0 )
+            return false;
+        TreeSet<Long> set = new TreeSet<>();
+        for(int i=0; i < nums.length; i++){
+            long curr = nums[i];
+            Long candidate = set.ceiling(curr - valueDiff);
+            if(candidate != null && candidate <= curr +  valueDiff)
+                return true;
+            set.add(curr);
+            if(i >= indexDiff)
+                set.remove((long) nums[i-indexDiff]);
         }
         return false;
     }
